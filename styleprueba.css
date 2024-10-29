@@ -1,0 +1,212 @@
+/* Fondo blanco para todo el cuerpo */
+body {
+    background-color: #f5f5dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navbar en la parte superior */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f5f5dc;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del logo y nombre */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo {
+    width: 50px;
+    height: auto;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #51a644;
+    margin-left: 10px;
+}
+
+/* Enlaces del navbar */
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    color: #51a644;
+    font-weight: 500;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: #3d8233;
+    text-decoration: none;
+}
+
+.nav-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+}
+
+
+
+/* Fondo detrás del formulario */
+.background-box {
+    position: absolute;
+    width: 1000px;
+    height: 750px;
+    background-image: url('../img/nature.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    top: 10%;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 13%;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.welcome-subtext {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+/* El formulario en el centro */
+.card {
+    position: relative;
+    z-index: 2;
+    width: 650px;
+    height: 525px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-top: 100px;
+}
+
+/* Botones y formularios */
+.form-control {
+    border-radius: 12px;
+    padding: 10px 15px;
+}
+
+/* Estilo normal del botón */
+.btn-primary {
+    background-color: #51a644;
+    border-color: #51a644;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Hover y Focus del botón en verde */
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #3d8233;
+    border-color: #3d8233;
+    box-shadow: 0 0 0 0.2rem rgba(81, 166, 68, 0.5);
+}
+
+/* Botones sociales (Google y Apple) */
+.social-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #51a644;
+    color: #51a644;
+}
+
+.social-btn+.social-btn {
+    margin-left: 15px;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+    background-color: #51a644;
+    color: #fff;
+    border-color: #3d8233;
+}
+
+/* Personalización del checkbox */
+.form-check-input {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 2px solid #51a644;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #51a644;
+    border-color: #51a644;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(81, 166, 68, 0.5);
+}
+
+/* Estilo para la etiqueta del checkbox */
+.form-check-label {
+    color: #51a644;
+    font-size: 14px;
+    padding-left: 4px;
+    font-weight: 500;
+}
+
+.text-success {
+    color: #51a644;
+    font-weight: 600;
+}
+
+
+.text-success:hover {
+    color: #3d8233;
+    text-decoration: none;
+}
+
+/* Ajuste del tamaño y la posición del formulario */
+.container {
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: auto;
+}
